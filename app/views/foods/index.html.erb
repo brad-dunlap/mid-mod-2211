@@ -1,0 +1,11 @@
+<h1> Search Results</h1>
+<p> Total Results: <%= @results %></p>
+<br>
+<h3> First <%= @foods.count %> Results: </h3>
+<% @foods.each do |food| %>
+	<p> GTIN/UPC code: <%= food.gtinUpc %> </p>
+	<p> Description: <%= food.description %> </p>
+	<p> Brand Owner: <%= food.brandOwner %> </p>
+	<p> Ingredients: <%= food.ingredients %> </p>
+	<br>
+<% end %>
