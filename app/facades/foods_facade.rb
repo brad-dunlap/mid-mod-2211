@@ -5,6 +5,7 @@ class FoodsFacade
 
 	def results(search)
 		results = @service.food_search(search)
+		results[:totalHits]
 	end
 
 	def search(search)
