@@ -3,7 +3,6 @@ class FoodsController < ApplicationController
 		@results = facade.results(params[:q])
 		@foods = facade.search(params[:q]).first(10)
 	end
-	
 
 	private
 	def facade
