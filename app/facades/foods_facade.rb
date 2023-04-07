@@ -7,7 +7,6 @@ class FoodsFacade
 		results = @service.food_search(search)
 	end
 
-
 	def search(search)
 		results = @service.food_search(search)
 		results[:foods].map do |food|
